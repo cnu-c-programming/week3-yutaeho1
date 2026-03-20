@@ -3,7 +3,7 @@
 void print();
 int square(int n);
 
-int main(void) {
+int main() {
     print();
 
     int num = 5;
