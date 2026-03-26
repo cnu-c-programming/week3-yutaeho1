@@ -8,7 +8,12 @@ void my_sum(char type, int count, ...) {
     switch(type){
         case 'S':
             for(int i=0; i<count; i++){
-                printf("%s ", va_arg(args, char*));
+                if(i == count-1){
+                    printf("%s", va_arg(args, char*));
+                }
+                else {
+                    printf("%s ", va_arg(args, char*));
+                }
             }
             printf("\n");
             break;
